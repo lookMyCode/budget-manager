@@ -1,42 +1,14 @@
 import React from 'react';
 
+import Header from '../components/Header';
+import AddForm from '../components/AddForm';
+
+
 export default function Expenses() {
   return (
     <main className="container my-4 pb-4">
-      <section className="row">
-        <div className="col">
-          <h2 className="text-center">Wydatki budżetu</h2>
-          <hr />
-        </div>
-      </section>
-      <section className="mt-3 align-items-center">
-        <form action="" className="row">
-          <div className="col-12">
-            <h3 className="text-center">Dodać wydatek</h3>
-          </div>
-          <div className="col-12 col-md-3 mt-2">
-            <input className="form-control form-control" type="text" placeholder="Nazwa" />
-          </div>
-          <div className="col-12 col-md-3 mt-2">
-            <select className="browser-default custom-select">
-              <option selected disabled>Rodzaj</option>
-              <option value="1">Jedzenie</option>
-              <option value="2">Zdrowie</option>
-              <option value="3">Samochód</option>
-            </select>
-          </div>
-          <div className="col-12 col-md-3 mt-2">
-            <input className="form-control form-control" type="number" placeholder="Kwota w zł" />
-          </div>
-          <div className="col-12 col-md-3 mt-2">
-            <input className="form-control form-control" type="datetime-local" />
-          </div>
-          <div className="col-12 mt-2">
-            <button type="button" className="btn btn-primary w-100 ml-0">Dodać</button>
-            <hr />
-          </div>
-        </form>
-      </section>
+      <Header className="text-center">Wydatki budżetu</Header>
+      <AddForm header='Dodać wydatek' />
       <section className="row mt-3">
         <div className="col">
           <h3 className="text-center">Wydatki po rodzaju</h3>
